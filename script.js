@@ -123,6 +123,15 @@ function loadtaz() {
                 '</ul>'
 
             document.getElementById('nafu').innerHTML = fuli;
+
+            var vifo = "";
+
+            vifo += '<ul>' +
+                '<li>' + mag.deaths.value + '</li>' +
+
+                '</ul>'
+
+            document.getElementById('bran').innerHTML = vifo;
         }
     }
     taz.send();
