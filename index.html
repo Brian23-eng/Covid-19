@@ -6,38 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Covid-19</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css " integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk " crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="container-fluid">
+
+    <nav class="navbar navbar-expand-lg sticky-top navShadow wow fadeIn">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#pageNav" aria-controls="pageNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="pageNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#picha">HOME
+                <span class="sr-only">(current)</span>
+              </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#subscribe">CONTACTS</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">COLLECTIONS</a>
+                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#western">WESTERN ART</a>
+                        <a class="dropdown-item" href="#kenyan">KENYAN ART</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
 
-        <h1>Covid</h1>
+
+    <div class="container-fluid all">
+
+        <div id="picha">
+            <img src="./assets/picha.png" alt="picha" class="d-block w-100">
+        </div>
+
+        <h1 class="text-center tuo" id="tuo">Covid-19 Updater</h1>
+        <div>
+            <p> Corona virus (Covid-19) is an air-borne disease belived to have originated from Wuhan state in China. The symptoms were first experienced in China but later on spread allover the world Italy being the most affected country but right now its
+                America.
+            </p>
+
+            <div>
+                <p>
+                    Some of the symptoms include:
+                    <ul>
+                        <li>Headache</li>
+                        <li>Dry coughs</li>
+                        <li>Running nose</li>
+                        <li>Dizziness</li>
+                    </ul>
+                </p>
+            </div>
+
+        </div>
+
+
         <div class="yote">
             <div class="row">
                 <div class="col-md-5 ke">
                     <h2 class="text-center">Kenya</h2>
 
-                    <div class="row">
-                        <div class="card col-md-4">
-                            <h6 class="card-header">Confirmed</h6>
+                    <div class="row ">
+                        <div class="card col-md-4" style="background-color: #D5F5E3;">
+                            <h6 class="card-header bg-primary">Confirmed</h6>
                             <div id="conf" class="card-body"></div>
                         </div>
 
-                        <div class="card col-md-4">
-                            <h6 class="card-header">Recovered</h6>
+                        <div class="card col-md-4" style="background-color: #D5F5E3;">
+                            <h6 class="card-header bg-success">Recovered</h6>
                             <div id="reco" class="card-body"></div>
                         </div>
 
-                        <div class="card col-md-4">
-                            <h6 class="card-header">Deaths</h6>
+                        <div class="card col-md-4" style="background-color: #D5F5E3;">
+                            <h6 class="card-header  bg-danger">Deaths</h6>
                             <div id="kifo" class="card-body"></div>
-                            <br><br>
                         </div>
-
-                        <button id="button">Covid</button>
                     </div>
+                    <br>
+                    <button id="button" style="background-color: #D5F5E3;"><i class="fa fa-eye" aria-hidden="true"></i></button>
                 </div>
                 <div class="col-md-2">
 
@@ -46,58 +97,62 @@
                 <div class="col-md-5 ug">
                     <h2 class="text-center">Uganda</h2>
                     <div class="row">
-                        <div class="card col-md-4">
-                            <h6 class="card-header">Confirmed</h6>
+                        <div class="card col-md-4" style="background-color: #D5F5E3;">
+                            <h6 class="card-header bg-primary">Confirmed</h6>
                             <div id="con" class="card-body"></div>
                         </div>
 
-                        <div class="card col-md-4">
-                            <h6 class="card-header">Recovered</h6>
+                        <div class="card col-md-4" style="background-color: #D5F5E3;">
+                            <h6 class="card-header bg-success">Recovered</h6>
                             <div id="rec" class="card-body"></div>
                         </div>
 
-                        <div class="card col-md-4">
-                            <h6 class="card-header">Deaths</h6>
+                        <div class="card col-md-4" style="background-color: #D5F5E3;">
+                            <h6 class="card-header bg-danger">Deaths</h6>
                             <div id="kif" class="card-body"></div>
-                            <br><br>
+
                         </div>
-                        <button id="button2">Covid</button>
+
                     </div>
+                    <br>
+                    <button id="button2" style="background-color: #D5F5E3;"><i class="fa fa-eye" aria-hidden="true"></i></button>
                 </div>
+
             </div>
             <div class="row">
                 <div class="col-md-5">
                     <h2 class="text-center">Tanzania</h2>
                     <div class="row">
-                        <div class="card col-md-4">
-                            <h6 class="card-header">Confirmed</h6>
+                        <div class="card col-md-4" style="background-color: #D5F5E3;">
+                            <h6 class="card-header bg-primary">Confirmed</h6>
                             <div id="tho" class="card-body"></div>
                         </div>
 
-                        <div class="card col-md-4">
-                            <h6 class="card-header">Recovered</h6>
+                        <div class="card col-md-4" style="background-color: #D5F5E3;">
+                            <h6 class="card-header bg-success">Recovered</h6>
                             <div id="nafu" class="card-body"></div>
                         </div>
 
-                        <div class="card col-md-4">
-                            <h6 class="card-header">Deaths</h6>
+                        <div class="card col-md-4" style="background-color: #D5F5E3;">
+                            <h6 class="card-header  bg-danger">Deaths</h6>
                             <div id="bran" class="card-body"></div>
-                            <br><br>
                         </div>
-                        <button id="button3">Covid</button>
                     </div>
+                    <br>
+                    <button id="button3" style="background-color: #D5F5E3;"><i class="fa fa-eye" aria-hidden="true"></i></button>
+
                 </div>
                 <div class="class col-md-2"></div>
                 <div class="col-md-5"></div>
             </div>
+
+
         </div>
 
-
-
-
-
     </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>
 

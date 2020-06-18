@@ -1,3 +1,44 @@
-/* .yote {
-    margin: 10px 10px 10px 10px;
-} */
+.tuo {
+    padding-top: 15px;
+}
+
+.all {
+    background-color: #D5F5E3;
+}
+
+.navbar-light {
+    box-shadow: none;
+}
+
+.navShadow {
+    box-shadow: 0px 15px 10px -15px #111;
+}
+
+.navbar-brand {
+    color: black;
+    padding-top: 15px;
+    margin-bottom: 1px;
+}
+
+.scrolled {
+    background-color: white;
+    transition: 1s;
+}
+
+.navbar-brand:hover {
+    color: black;
+}
+
+nav li a {
+    color: black;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+i {
+    color: black;
+}
