@@ -1,3 +1,4 @@
+//Kenya
 document.getElementById("button").addEventListener('click', loadText);
 
 function loadText() {
@@ -47,48 +48,49 @@ function loadText() {
     }
 
     xhr.send();
-    // xhr.onload = function() {
-    //         if (this.status == 200) {
-    //             var covid = JSON.parse(this.responseText);
-
-    //             var output = '';
-
-    //             for (var i in covid) {
-
-    //                 output += '<ul>' +
-    //                     '<li>' + covid.recovered.value + '</li>' +
-    //                     '</ul>';
-
-    //             }
-    //             document.getElementById("reco").innerHTML = output;
-
-    //             // document.getElementById('covid').innerHTML = this.responseText;
-
-    //         }
-    //     }
-    //     // sends request
-    // xhr.send();
-
-
 
 }
 
+document.getElementById('button2').addEventListener('click', loadwords);
+
+function loadwords() {
+    var ug = new XMLHttpRequest();
+
+    ug.open('GET', 'https://covid19.mathdro.id/api/countries/uganda', true);
+
+    ug.onload = function() {
+        if (this.status == 200) {
+            var pand = JSON.parse(this.responseText);
+
+            var output = '';
+
+            output += '<ul>' +
+                '<li>' + pand.confirmed.value + '</li>' +
+
+                '</ul>'
+
+            document.getElementById('con').innerHTML = output;
+
+            var good = '';
+
+            good += '<ul>' +
+                '<li>' + pand.recovered.value + '</li>' +
+                '</ul>'
+
+            document.getElementById('rec').innerHTML = good;
+
+            var bad = '';
+
+            bad += '<ul>' +
+                '<li>' + pand.deaths.value + '</li>' +
+                '</ul>'
+
+            document.getElementById('kif').innerHTML = bad;
 
 
+        }
 
+    }
+    ug.send()
 
-
-
-// $(function() {
-
-//     $.ajax({
-//         type: 'GET',
-//         url: 'https://covid19.mathdro.id/api',
-//         success: function(data) {
-//             $.each(data, function(i, data) {
-
-//                 $data.append('<li> ' + data + ' </li>')
-//             })
-//         }
-//     });
-// });
+}
