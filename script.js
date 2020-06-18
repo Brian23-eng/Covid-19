@@ -91,6 +91,39 @@ function loadwords() {
         }
 
     }
-    ug.send()
+    ug.send();
 
+}
+
+document.getElementById('button3').addEventListener('click', loadtaz);
+
+function loadtaz() {
+    var taz = new XMLHttpRequest();
+
+    taz.open('GET', 'https://covid19.mathdro.id/api/countries/tanzania', true);
+
+    taz.onload = function() {
+        if (this.status = +200) {
+
+            var mag = JSON.parse(this.responseText);
+
+            var output = '';
+
+            output += '<ul>' +
+                '<li>' + mag.confirmed.value + '</li>' +
+                '</ul>'
+
+
+            document.getElementById('tho').innerHTML = output;
+
+            var fuli = "";
+
+            fuli += '<ul>' +
+                '<li>' + mag.recovered.value + '</li>' +
+                '</ul>'
+
+            document.getElementById('nafu').innerHTML = fuli;
+        }
+    }
+    taz.send();
 }
