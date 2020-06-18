@@ -42,3 +42,14 @@ nav li a:hover {
 i {
     color: black;
 }
+
+.hoot {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    padding-top: 35px;
+    border-top: 1px black solid;
+}
+
+.tz {
+    padding-bottom: 25px;
+}
