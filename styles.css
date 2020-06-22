@@ -53,3 +53,7 @@ i {
 .tz {
     padding-bottom: 25px;
 }
+
+ul {
+    list-style: none;
+}
