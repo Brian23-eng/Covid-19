@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -19,12 +23,12 @@
         <div class="collapse navbar-collapse" id="pageNav">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#picha">HOME
+                    <a class="nav-link" href="#picha"><span class="home">HOME</span> 
                 <span class="sr-only">(current)</span>
               </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#foot">CONTACTS</a>
+                    <a class="nav-link" href="#foot"><span class="cont">CONTACTS</span></a>
                 </li>
             </ul>
         </div>
@@ -38,26 +42,27 @@
             <img src="./assets/picha.png" alt="picha" class="d-block w-100">
         </div>
 
-        <h1 class="text-center tuo" id="tuo">Covid-19 Updater</h1>
+        <h1 class="text-center tuo" id="tuo">Covid-19 Updates</h1>
+        <h2 class="text-center east">East African Countries</h2>
 
         <div class="yote">
             <div class="row">
                 <div class="col-md-5 ke">
-                    <h2 class="text-center">Kenya</h2>
+                    <h2 class="text-center ken">Kenya</h2>
 
                     <div class="row ">
                         <div class="card col-md-4" style="background-color: #D5F5E3;">
-                            <h6 class="card-header bg-primary">Confirmed</h6>
+                            <h6 class="card-header bg-primary firm">Confirmed</h6>
                             <div id="conf" class="card-body"></div>
                         </div>
 
                         <div class="card col-md-4" style="background-color: #D5F5E3;">
-                            <h6 class="card-header bg-success">Recovered</h6>
+                            <h6 class="card-header bg-success red">Recovered</h6>
                             <div id="reco" class="card-body"></div>
                         </div>
 
                         <div class="card col-md-4" style="background-color: #D5F5E3;">
-                            <h6 class="card-header  bg-danger">Deaths</h6>
+                            <h6 class="card-header  bg-danger ths">Deaths</h6>
                             <div id="kifo" class="card-body"></div>
                         </div>
                     </div>
@@ -69,20 +74,20 @@
                 </div>
 
                 <div class="col-md-5 ug">
-                    <h2 class="text-center">Uganda</h2>
+                    <h2 class="text-center uga">Uganda</h2>
                     <div class="row">
                         <div class="card col-md-4" style="background-color: #D5F5E3;">
-                            <h6 class="card-header bg-primary">Confirmed</h6>
+                            <h6 class="card-header bg-primary firm">Confirmed</h6>
                             <div id="con" class="card-body"></div>
                         </div>
 
                         <div class="card col-md-4" style="background-color: #D5F5E3;">
-                            <h6 class="card-header bg-success">Recovered</h6>
+                            <h6 class="card-header bg-success red">Recovered</h6>
                             <div id="rec" class="card-body"></div>
                         </div>
 
                         <div class="card col-md-4" style="background-color: #D5F5E3;">
-                            <h6 class="card-header bg-danger">Deaths</h6>
+                            <h6 class="card-header bg-danger ths">Deaths</h6>
                             <div id="kif" class="card-body"></div>
 
                         </div>
@@ -95,20 +100,20 @@
             </div>
             <div class="row tz">
                 <div class="col-md-5">
-                    <h2 class="text-center">Tanzania</h2>
+                    <h2 class="text-center taz">Tanzania</h2>
                     <div class="row">
                         <div class="card col-md-4" style="background-color: #D5F5E3;">
-                            <h6 class="card-header bg-primary">Confirmed</h6>
+                            <h6 class="card-header bg-primary firm">Confirmed</h6>
                             <div id="tho" class="card-body"></div>
                         </div>
 
                         <div class="card col-md-4" style="background-color: #D5F5E3;">
-                            <h6 class="card-header bg-success">Recovered</h6>
+                            <h6 class="card-header bg-success red">Recovered</h6>
                             <div id="nafu" class="card-body"></div>
                         </div>
 
                         <div class="card col-md-4" style="background-color: #D5F5E3;">
-                            <h6 class="card-header  bg-danger">Deaths</h6>
+                            <h6 class="card-header  bg-danger ths">Deaths</h6>
                             <div id="bran" class="card-body"></div>
                         </div>
                     </div>
@@ -135,9 +140,9 @@
 
                         <a href="https://www.facebook.com/" target="_blank"><img src="./assets/facebook.png" width="35" alt="" srcset=""></a>
 
-                        <a href="https://twitter.com/jibril_brian" target="_blank"><img src="./assets/twitter2.png" alt="" srcset="" width="35"></a>
+                        <a href="https://twitter.com/jibril_brian" target="_blank"><img src="./assets/twit.png" alt="" srcset="" width="35"></a>
 
-                        <a href=""><img src="./assets/linked_in.jpg" alt="" srcset="" width="45"></a>
+                        <a href="https://www.linkedin.com/"><img src="./assets/linked.jpg" alt="" srcset="" width="65"></a>
                         <p>&copy; 2020 Copyright:</p>
 
                     </div>
