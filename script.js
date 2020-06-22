@@ -14,6 +14,8 @@ $(function() {
 
 
 
+
+
 //Kenya
 document.getElementById("button").addEventListener('click', loadText);
 
